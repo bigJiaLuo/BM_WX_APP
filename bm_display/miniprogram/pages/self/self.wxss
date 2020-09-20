@@ -1,0 +1,52 @@
+/* pages/self/self.wxss */
+#main{
+  background-color: #f0f0f5;
+  position: fixed;
+  top: 0rpx;
+  left:0rpx;
+  right: 0rpx;
+  bottom: 0rpx;
+}
+#v1{
+  background-color: white;
+  width: 734rpx;
+  height: 220rpx;
+  margin:5rpx 8rpx 0rpx 8rpx;
+  border-radius: 10rpx;
+  box-shadow: darkgray 0rpx 6rpx 10rpx 0rpx;
+}
+
+
+
+#i1{
+  float:left;
+  width: 180rpx;
+  height: 160rpx;
+  margin: 30rpx 0rpx 30rpx 30rpx;
+  
+}
+
+#i2{
+  width:470rpx;
+  margin: 60rpx 0rpx 50rpx 30rpx;
+  float:left;
+  color:#333;
+}
+#ii2{
+  margin-top:20rpx;
+  font-size: 30rpx;
+  color:#999;
+}
+
+#v2{
+  background-color: white;
+  width: 734rpx;
+  height: 150rpx;
+  margin:15rpx 8rpx 0rpx 8rpx;
+  border-radius: 10rpx;
+  
+}
+#v2btn{
+  height: 150rpx;
+  padding-top:30rpx;
+}

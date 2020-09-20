@@ -1,0 +1,41 @@
+/* pages/appointment/appointment.wxss */
+
+.timeStyle{
+  width: 185rpx;
+  float:left;
+}
+.yearStyle{
+  width: 185rpx;
+  float:left;
+}
+.monthStyle{
+  width: 185rpx;
+  float:left;
+}
+.dayStyle{
+  width: 185rpx;
+  float:left;
+}
+.timeInputStyle{
+  width: 100rpx;
+  border: 1rpx solid lightgray;
+  float:left;
+}
+.timeTextStyle{
+  margin-left: 10rpx;
+  width: 30rpx;
+  float:left;
+}
+
+#markInputStyle{
+  height:300rpx;
+  border: 1rpx solid lightgray; 
+
+
+}
+
+#btnStyle{
+  width:100%;
+  position: fixed;
+  bottom: 0rpx;
+}

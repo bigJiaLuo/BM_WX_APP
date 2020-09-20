@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<!-- <view id="single">
+  <view id="d1">
+    <image class="bm_img" src="../../img/bm(5).jpg"></image>
+  </view>
+  <view id="d2"> 
+    <view id="il1">
+      <text class="bmname_style">傅先生</text>
+      <text class="age_style">25岁</text>
+      <text class="salary_style">五万/月</text>
+    </view>
+    <view id="il2">
+      <text class="jobtime_style">10个月</text>
+      <text class="edu_style">大专</text>
+      <text class="home_style">杭州</text>
+    </view>
+    <view id="il3">
+      <text class="job_style">做家务</text>
+    </view>
+  </view>
+  <view id="d3"> 
+    <text class="infobtn_style">详情</text>
+  </view> 
+</view> -->
+<view wx:for="{{bminfos}}">
+  <view id='single'>
+    <view id='d1'>
+      <image class='bm_img' src='{{item.bmimgss[0]}}'></image>
+    </view>
+    <view id='d2'>
+      <view class='il1'>
+        <text class="bmname_style">{{item.bmname}}</text>
+        <!-- {{item.bmid}} -->
+        <text class="age_style">{{item.age}}岁</text>
+        <text class="salary_style">{{item.salary}}元/月</text>
+      </view>
+      <view id='il2'>
+        <text class="jobtime_style">{{item.job_time}}个月</text>
+        <text class="edu_style">{{item.edu}}</text>
+        <text class="home_style">{{item.home}}</text>
+      </view>
+      <view id='il3'>
+        <text class="job_style">{{item.job}}</text>
+      </view>
+    </view>
+    <view id='d3'>
+        <text class="infobtn_style" bindtap='gotodetail' data-mid='{{item.bmid}}'>详情</text>
+    </view>
+  </view>
+</view>

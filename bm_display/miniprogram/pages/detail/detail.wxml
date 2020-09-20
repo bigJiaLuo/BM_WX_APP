@@ -1,0 +1,33 @@
+<!--pages/detail/detail.wxml-->
+<!--滚动图-->
+<view id='topimg'>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{bminfo.bmimgss}}">
+      <swiper-item>
+        <image id='bmimg' src="{{item}}" class="slide-image"/>
+      </swiper-item>
+    </block>
+  </swiper>
+  
+</view>
+<view id="content">
+  <view>
+    <text>姓名：</text><text>{{bminfo.bmname}}</text>
+  </view>
+   <view>
+    <text>年龄：</text><text>{{bminfo.age}}</text>
+  </view>
+   <view>
+    <text>薪水：</text><text>{{bminfo.salary}}</text>
+  </view>
+   <view>
+    <text>教育程度：</text><text>{{bminfo.edu}}</text>
+  </view>
+   <view>
+    <text>工作内容：</text><text>{{bminfo.job}}</text>
+  </view>
+</view>
+<view id='bottombtn'>
+  <button open-type='getUserInfo' bindgetuserinfo='gotoappointment' data-bmid='{{bminfo.bmid}}' data-salary='{{bminfo.salary}}'>立即预约</button>
+</view>

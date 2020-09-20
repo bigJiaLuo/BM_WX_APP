@@ -1,0 +1,23 @@
+<!--pages/appointment/appointment.wxml-->
+<view>
+  <form bindsubmit='createorder'>
+    <view>预约信息</view>
+    <view>用户名：<input type="text" value="{{user.nickName}}" name="username"></input></view>
+    <view>保姆id：<input type='text' value='{{bmid}}' name='bmid'></input></view>
+    <view>保姆薪水：<input type='text' value='{{salary}}' name='salary'></input></view>
+    <view class='timeStyle'>起始时间:</view>
+    <view class='yearStyle'><input class="timeInputStyle" type='text' value='2019' name="startYear"></input><text class="timeTextStyle">年</text></view>
+    <view class='monthStyle'><input class="timeInputStyle" type='text' value='5' name="startMonth"></input><text class="timeTextStyle">月</text></view>
+    <view class='dayStyle'><input class="timeInputStyle" type='text' value='30' name="startDay"></input><text class="timeTextStyle">日</text></view>
+
+
+    <view class='timeStyle'>结束时间:</view>
+    <view class='yearStyle'><input class="timeInputStyle" type='text' value='2019' name="endYear"></input><text class="timeTextStyle">年</text></view>
+    <view class='monthStyle'><input class="timeInputStyle" type='text' value='6' name="endMonth"></input><text class="timeTextStyle">月</text></view>
+    <view class='dayStyle'><input class="timeInputStyle" type='text' value='30' name="endDay"></input><text class="timeTextStyle">日</text></view>
+    <view>备注：</view>
+    <view><input id="markInputStyle" name="mark" type='text'></input></view>
+
+    <view id='btnStyle'><button form-type='submit'>提交订单</button></view>
+  </form>
+</view>

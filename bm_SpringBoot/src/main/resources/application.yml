@@ -1,0 +1,23 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /BMProgram_war
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://127.0.0.1:3306/test?serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  type-aliases-package: com.fjl.bm.bean
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+pagehelper:
+  params: count=countsql
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true

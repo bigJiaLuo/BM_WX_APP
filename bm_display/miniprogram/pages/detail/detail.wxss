@@ -1,0 +1,23 @@
+/* miniprogram/pages/detail/detail.wxss *//* pages/detail/detail.wxss */
+
+#topimg{
+  width: 750rpx;
+  height: 300rpx;
+  background-color: pink;
+
+
+}
+
+#bmimg{
+  width: 750rpx;
+  height: 300rpx;
+}
+#content{
+  margin-top: 30rpx;
+}
+
+#bottombtn{
+  width: 750rpx;
+  position: fixed;
+  bottom: 0px;
+}

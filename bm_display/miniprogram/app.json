@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/self/self"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#3399ff",
+    "navigationBarTitleText": "最优保姆",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3399ff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "保姆列表"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

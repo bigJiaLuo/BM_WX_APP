@@ -1,0 +1,26 @@
+<!--pages/order/order.wxml-->
+<view wx:for='{{orderlist}}'>
+  <view class='single'>
+    <view class='i1'>
+      <view class='ii1'>
+        <text class='text1'>订单编号:</text>
+        <text class='text1'>{{item.oid}}</text>
+      </view>
+      
+    </view>
+    
+    <view class='i2'>
+      <text class='text1'>保姆编号:</text>
+      <text class='text1'>{{item.bmid}}</text>
+    </view>
+    <view class='i3'>
+      <text class='text1'>订单时间:</text>
+      <text class='text1'>{{item.count}}</text>
+      <text class='text1'>个月</text>
+    </view>
+    <view class='i3'>
+        <text class='text1'>订单金额:</text>
+        <text class='text1'>{{item.amount}}</text>
+      </view>
+  </view>
+</view>

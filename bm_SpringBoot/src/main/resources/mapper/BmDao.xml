@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fjl.bm.dao.BMDao">
+    <select id="selectAll" resultType="com.fjl.bm.bean.Tb_bm">
+        SELECT *
+        FROM tb_bm
+    </select>
+    <select id="selectByBmid" resultType="com.fjl.bm.bean.Tb_bm">
+        SELECT *
+        FROM tb_bm
+        WHERE bmid = #{bmid}
+    </select>
+    <insert id="insertorder">
+        insert into tb_order
+        values(#{oid},#{bmid},#{username},#{count},#{amount},#{mark})
+    </insert>
+
+    <select id="findByUsername" resultType="com.fjl.bm.bean.Tb_bmOrder">
+        SELECT *
+        FROM tb_order
+        WHERE username = #{username}
+    </select>
+</mapper>
